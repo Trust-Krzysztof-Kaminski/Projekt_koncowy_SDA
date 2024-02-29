@@ -1,0 +1,115 @@
+{
+  "id": "71d551e6-a096-4eb2-9620-a3697f4de6a1",
+  "version": "2.0",
+  "name": "Usuwanie_z_koszyka",
+  "url": "https://practicesoftwaretesting.com",
+  "tests": [{
+    "id": "fafd7e01-0577-4b2a-9ef0-58049db85946",
+    "name": "Dodawanie_i_usuwanie_z_koszyka",
+    "commands": [{
+      "id": "da9bc350-128b-4576-9132-90cf5d9f8b29",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a2f4b6f-e644-420f-a4b0-8ea7bbe63766",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bc3da6d-ca87-4169-a6ef-645a751d7ff8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) .card-img-top",
+      "targets": [
+        ["css=.card:nth-child(2) .card-img-top", "css:finder"],
+        ["xpath=//img[@alt='Pliers']", "xpath:img"],
+        ["xpath=//a[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca185fa8-44e7-4dde-b8ed-46407cb517d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"add-to-cart\"]",
+      "targets": [
+        ["css=*[data-test=\"add-to-cart\"]", "css:data-attr"],
+        ["id=btn-add-to-cart", "id"],
+        ["css=#btn-add-to-cart", "css:finder"],
+        ["xpath=//button[@id='btn-add-to-cart']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7653453-8348-4bbc-a542-ad24b25b17f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"cart-quantity\"]",
+      "targets": [
+        ["css=*[data-test=\"cart-quantity\"]", "css:data-attr"],
+        ["id=lblCartCount", "id"],
+        ["css=#lblCartCount", "css:finder"],
+        ["xpath=//span[@id='lblCartCount']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21bf8472-8523-4b36-993b-8d6dae1daedf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=*[data-test=\"nav-cart\"]",
+      "targets": [
+        ["css=*[data-test=\"nav-cart\"]", "css:data-attr"],
+        ["linkText=1", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/checkout')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34d85a02-17a4-472f-8506-36a4a880e640",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=*[data-test=\"nav-cart\"]",
+      "targets": [
+        ["css=*[data-test=\"nav-cart\"]", "css:data-attr"],
+        ["linkText=1", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/checkout')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52edec82-f0c8-4042-8632-be5cfd03f7b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-remove",
+      "targets": [
+        ["css=.fa-remove", "css:finder"],
+        ["xpath=//td[6]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "436fb3c0-a83d-4845-9985-5240f2eb37f8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fafd7e01-0577-4b2a-9ef0-58049db85946"]
+  }],
+  "urls": ["https://practicesoftwaretesting.com/"],
+  "plugins": []
+}
